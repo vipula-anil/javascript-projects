@@ -65,16 +65,16 @@ if (preparedForLiftOff) {
 } else {
     console.log("Shuttle not launch.");
 }
-
+console.log("All systems are a go! Initiating space shuttle launch sequence.")
 console.log("--------------------------------------------------------------");
-console.log("Date:"  + date);
-console.log("Time:" + time);
-console.log("Astronaut Count:"  + astronautCount);
-console.log("Crew Mass:" + crewMassKg +"kg");
-console.log("Fuel Mass:" + fuelMassKg + "kg");
-console.log("Shuttle Mass:" + shuttleMassKg + "kg");
-console.log("Total Mass:" + totalMassKg + "kg");
-console.log("Fuel Temperature:" + fuelTempCelsius + "c");
-console.log("Weather Status:" + weatherStatus);
+console.log("Date:  "  + date);
+console.log("Time:  " + time);
+console.log("Astronaut Count:  "  + astronautCount);
+console.log("Crew Mass:  " + crewMassKg +" kg");
+console.log("Fuel Mass:  " + fuelMassKg + " kg");
+console.log("Shuttle Mass:  " + shuttleMassKg + " kg");
+console.log("Total Mass:  " + totalMassKg + " kg");
+console.log("Fuel Temperature:  " + fuelTempCelsius + " \u00B0c");
+console.log("Weather Status:  " + weatherStatus);
 console.log("------------------------------------------------------------------");
 console.log("Have a safe trip astronauts!");
