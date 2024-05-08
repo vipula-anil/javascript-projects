@@ -15,7 +15,8 @@ console.log(holdCabinet2.slice(2,4));
 console.log(holdCabinet1);
 console.log(holdCabinet2);
 
-//3) reverse the first array, and sort the second. What is the difference between these two methods? reverse() revers the elements in an array and sort() arranges elements of an array in increasing order.  
+//3) reverse the first array, and sort the second. What is the difference between these two methods? 
+//reverse() revers the elements in an array and sort() arranges elements of an array in increasing order.  
 //Do the methods alter the original arrays?yes
 console.log(holdCabinet1.reverse());
 console.log(holdCabinet2.sort());
