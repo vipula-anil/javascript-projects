@@ -7,7 +7,7 @@ console.log(language.slice(0,1)+language.slice(4,5));
 
 //2. Without using slice(), use method chaining to accomplish the same thing.
 console.log(language.replace('avaScript','S'));
-
+console.log(`${language.slice(1,10).replace('avaScript','JS')}`);
 
 //3. Use bracket notation and a template literal to print, "The abbreviation for 'JavaScript' is 'JS'."
 let firstLetter = language[0];
@@ -15,9 +15,14 @@ let secondLetter = language[4];
 console.log(`The abbreviation for 'JavaScript' is '${firstLetter}${secondLetter}'.`);
 
 //4. Just for fun, try chaining 3 or more methods together, and then print the result.
+console.log(`${language.slice(language.indexOf('Java'),language.indexOf('Script')-3)}${language.replace('JavaScript','S')}`);
+console.log(`${language.slice(0,1)}${language.slice(language.indexOf('S'),language.indexOf('S')+1)}`);
+console.log(`${language.slice(1,10).replace('avaScript','JS')}`);
 //Part Three section Two
 
 //1. Use the string methods you know to print 'Title Case' from the string 'title case'.
 
 let notTitleCase = 'title case';
 console.log(`${notTitleCase.slice(0,5).replace('t','T')} ${notTitleCase.slice(6,10).replace('c','C')}`);
+
+
