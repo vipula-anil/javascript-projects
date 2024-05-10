@@ -3,16 +3,28 @@ let protoArray2 = "A;C;M;E";
 let protoArray3 = "space delimited string";
 let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
-strings = [protoArray1, protoArray2, protoArray3, protoArray4];
+ strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
 	let check;
 	let output;
+	let deliminater;
 	//TODO: 2. write the code required for this step
+	for(let i = 0;i < strings.length;i++)
+		{
+			check = strings[i].includes(",");
+			if(check)
+				{ 
+					deliminater = ","
+					output = strings[i].split(deliminater).reverse().join(deliminater);
+					break;
+				}
+		}
 
-	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
+	//NOTE: For the code to run properly, you must return your output.  
+	//this needs to be the final line of code within the function's { }.
 	return output;
 }
 
@@ -22,7 +34,16 @@ function semiDash() {
 	let output;
 //TODO: write the code required for this step
 
-  
+for(let i = 0;i < strings.length;i++)
+	{
+		check = strings[i].includes(";");
+		if(check)
+			{ 
+				output = strings[i].split(";").sort().join("-");
+				break;
+			}
+	}
+
 	return output;
 }
 
@@ -32,6 +53,18 @@ function reverseSpaces() {
 	let output;
   //TODO: write the code required for this step
 
+  for(let i = 0;i < strings.length;i++)
+	{
+		check = strings[i].includes(" ");
+		if(check)
+			{ 
+				deliminater = " ";
+				output = strings[i].split(deliminater).reverse().join(deliminater);
+				break;
+			}
+	}
+
+
 	return output;
 }
 
@@ -40,7 +73,18 @@ function commaSpace() {
 	let check;
 	let output;
 	//TODO: write the code required for this step
-  
+
+	
+	for(let i = 0;i < strings.length;i++)
+		{
+			check = strings[i].includes(", ");
+			if(check)
+				{ 
+					deliminater = ", "
+					output = strings[i].split(deliminater).reverse().join(",");
+					break;
+				}
+		}
 	return output;
 }
 
